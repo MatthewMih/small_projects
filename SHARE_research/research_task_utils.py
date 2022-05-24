@@ -2,6 +2,16 @@ import matplotlib.pyplot as plt
 import torch
 from tqdm import trange
 from matplotlib import pyplot as plt
+import os
+
+
+def num_of_params(model, only_trainable: bool = False): # good function from StackOverflow
+    parameters = list(model.parameters())
+    if only_trainable:
+        parameters = [p for p in parameters if p.requires_grad]
+    unique = {p.data_ptr(): p for p in parameters}.values()
+    return sum(p.numel() for p in unique)
+
 
 def get_acc_and_loss(model, device, dataloader, loss_function):
     with torch.no_grad():
@@ -21,7 +31,7 @@ def make_checkpoint(model, optimizer, statistics_list, dir_path):
         os.makedirs(dir_path)
     torch.save({'model_state_dict': model.state_dict(),
             'optimizer_state_dict': optimizer.state_dict(),
-            'statistics': statistics_list}, dir_path+"/ep"+str(len(statistics["trainacc"]) - 1)+".pt")
+            'statistics': statistics_list}, dir_path+"/ep"+str(len(statistics_list["trainacc"]) - 1)+".pt")
 
 def train(model, device, optimizer, loss_function, trainloader, testloader, statistics_list, epochs_n=10,
           augmenter=None, checkpoints_dir=None, checkpoints_per=10):
