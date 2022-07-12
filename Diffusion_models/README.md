@@ -33,5 +33,9 @@ Model uses $T=1000$ steps for 32x32 image generating. It was trained for 48 epoc
   <img src="https://github.com/MatthewMih/small_projects/blob/main/Diffusion_models/images%26samples/gifka_4x.gif" width="450">
 </p>
 
+## Other datasets
+Now the quality of images generated on CelebA/FFHQ-trained models is too low. I'm conducting experiments and training new models to improve it.
 
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58548935/178600767-8045b470-de21-45ca-a581-0bd7d6db39e4.png" width="450" title="CelebA">
+</p>
