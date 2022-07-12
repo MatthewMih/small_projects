@@ -23,7 +23,7 @@ Model uses $T=1000$ steps for 32x32 image generating. It was trained for 48 epoc
   
 </p>
 
-### Generation process step-by-step:
+### Generation process step by step:
 <p align="center">
 <img src="https://user-images.githubusercontent.com/58548935/178343762-86175901-ac4c-4e90-8165-1be5ca2d04fc.png" width="900">
 </p>
