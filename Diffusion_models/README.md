@@ -18,8 +18,8 @@ Model uses $T=1000$ steps for 32x32 image generating. It was trained for 48 epoc
 
 ### Generated samples
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/58548935/178595300-0abb340a-80ae-4d3d-bcd3-568e309c2680.png" width="700">
-  <img src="https://github.com/MatthewMih/small_projects/blob/main/Diffusion_models/images%26samples/48epMNIST.png" width="475">
+  <img src="https://user-images.githubusercontent.com/58548935/178595300-0abb340a-80ae-4d3d-bcd3-568e309c2680.png" width="700" title="generated samples">
+  <img src="https://github.com/MatthewMih/small_projects/blob/main/Diffusion_models/images%26samples/48epMNIST.png" width="475" title="generated samples">
   
 </p>
 
@@ -37,5 +37,9 @@ Model uses $T=1000$ steps for 32x32 image generating. It was trained for 48 epoc
 Now the quality of images generated on CelebA/FFHQ-trained models is too low. I'm conducting experiments and training new models to improve it.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/58548935/178600767-8045b470-de21-45ca-a581-0bd7d6db39e4.png" width="450" title="CelebA">
+<img src="https://user-images.githubusercontent.com/58548935/178600767-8045b470-de21-45ca-a581-0bd7d6db39e4.png" width="450" title="Trained on CelebA">
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58548935/178727749-545be60d-ba59-459e-82f5-82f0c4edb5d2.png" width="600" title="FFHQ 375 epochs">
 </p>
