@@ -41,5 +41,9 @@ Now the quality of images generated on CelebA/FFHQ-trained models is too low. I'
 </p>
 
 <p align="center">
+<img src="https://user-images.githubusercontent.com/58548935/178783740-17763c85-a70f-443e-8e51-5ec6d73b1bb1.png" width="600" title="FFHQ 482 epochs">
+</p>
+
+<p align="center">
 <img src="https://user-images.githubusercontent.com/58548935/178727749-545be60d-ba59-459e-82f5-82f0c4edb5d2.png" width="600" title="FFHQ 375 epochs">
 </p>
